@@ -36,8 +36,6 @@ def readCSV(filename):
 		# Skips header row
 		next(csv_reader, None)
 		for row in csv_reader:
-			# if (row[4]):
-			# 	print ("COUNT:", row[1],"PITCH: ", firstPitchType, "EVENTUAL EVENT:", row[4])
 			if (row[1] == "0-0"):
 				# Resets first pitch, useful if data incomplete and new at-bat starts before event type found
 				firstPitchType = None
